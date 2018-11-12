@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_XmasTreeApplication.1631245705.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="XmasTreeApplication" t="IncludeRecursive">
+        <e p="angular.json" t="Include" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="ClientApp" t="Include">
+          <e p="app" t="Include">
+            <e p="app-routing.module.ts" t="Include" />
+            <e p="app.component.html" t="Include" />
+            <e p="app.component.scss" t="Include" />
+            <e p="app.component.spec.ts" t="Include" />
+            <e p="app.component.ts" t="Include" />
+            <e p="app.module.ts" t="Include" />
+          </e>
+          <e p="Assets" t="Include">
+            <e p=".gitkeep" t="Include" />
+          </e>
+          <e p="browserslist" t="Include" />
+          <e p="environments" t="Include">
+            <e p="environment.prod.ts" t="Include" />
+            <e p="environment.ts" t="Include" />
+          </e>
+          <e p="favicon.ico" t="Include" />
+          <e p="index.html" t="Include" />
+          <e p="karma.conf.js" t="Include" />
+          <e p="main.ts" t="Include" />
+          <e p="polyfills.ts" t="Include" />
+          <e p="styles.scss" t="Include" />
+          <e p="test.ts" t="Include" />
+          <e p="tsconfig.app.json" t="Include" />
+          <e p="tsconfig.spec.json" t="Include" />
+          <e p="tslint.json" t="Include" />
+        </e>
+        <e p="config.json" t="Include" />
+        <e p="Controllers" t="Include">
+          <e p="AccountController.cs" t="Include" />
+          <e p="HomeController.cs" t="Include" />
+          <e p="OrderItemsController.cs" t="Include" />
+          <e p="OrdersController.cs" t="Include" />
+          <e p="ProductsController.cs" t="Include" />
+        </e>
+        <e p="Data" t="Include">
+          <e p="entities" t="Include">
+            <e p="Customer.cs" t="Include" />
+            <e p="Order.cs" t="Include" />
+            <e p="OrderItem.cs" t="Include" />
+            <e p="Product.cs" t="Include" />
+            <e p="StoreUser.cs" t="Include" />
+          </e>
+          <e p="IXmasTreeRepository.cs" t="Include" />
+          <e p="trees.json" t="Include" />
+          <e p="XmasTreeContext.cs" t="Include" />
+          <e p="XmasTreeMappingProfile.cs" t="Include" />
+          <e p="XmasTreeRepository.cs" t="Include" />
+          <e p="XmasTreeSeeder.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="ErrorViewModel.cs" t="Include" />
+        </e>
+        <e p="node_modules" t="ExcludeRecursive">
+          <e p="@angular/animations" t="IncludeRecursive" />
+          <e p="@angular/cli" t="IncludeRecursive" />
+          <e p="@angular/common" t="IncludeRecursive" />
+          <e p="@angular/compiler" t="IncludeRecursive" />
+          <e p="@angular/compiler-cli" t="IncludeRecursive" />
+          <e p="@angular/core" t="IncludeRecursive" />
+          <e p="@angular/forms" t="IncludeRecursive" />
+          <e p="@angular/http" t="IncludeRecursive" />
+          <e p="@angular/platform-browser" t="IncludeRecursive" />
+          <e p="@angular/platform-browser-dynamic" t="IncludeRecursive" />
+          <e p="@angular/router" t="IncludeRecursive" />
+          <e p="@angular-devkit/build-angular" t="IncludeRecursive" />
+          <e p="@types" t="IncludeRecursive">
+            <e p="jasmine" t="IncludeRecursive" />
+            <e p="jasminewd2" t="IncludeRecursive" />
+            <e p="node" t="IncludeRecursive" />
+          </e>
+          <e p="bootstrap" t="IncludeRecursive" />
+          <e p="codelyzer" t="IncludeRecursive" />
+          <e p="core-js" t="IncludeRecursive" />
+          <e p="font-awesome" t="IncludeRecursive" />
+          <e p="jasmine-core" t="IncludeRecursive" />
+          <e p="jasmine-spec-reporter" t="IncludeRecursive" />
+          <e p="jquery" t="IncludeRecursive" />
+          <e p="jquery-validation" t="IncludeRecursive" />
+          <e p="jquery-validation-unobtrusive" t="IncludeRecursive" />
+          <e p="karma" t="IncludeRecursive" />
+          <e p="karma-chrome-launcher" t="IncludeRecursive" />
+          <e p="karma-coverage-istanbul-reporter" t="IncludeRecursive" />
+          <e p="karma-jasmine" t="IncludeRecursive" />
+          <e p="karma-jasmine-html-reporter" t="IncludeRecursive" />
+          <e p="protractor" t="IncludeRecursive" />
+          <e p="rxjs" t="IncludeRecursive" />
+          <e p="ts-node" t="IncludeRecursive" />
+          <e p="tslint" t="IncludeRecursive" />
+          <e p="zone.js" t="IncludeRecursive" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="XmasTreeApplication.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="package-lock.json" t="Include" />
+        <e p="Package.json" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Sevices" t="Include" />
+        <e p="Startup.cs" t="Include" />
+        <e p="tsconfig.json" t="Include" />
+        <e p="ViewModels" t="Include">
+          <e p="LoginViewModel.cs" t="Include" />
+          <e p="OrderItemViewModel.cs" t="Include" />
+          <e p="OrderViewModel.cs" t="Include" />
+        </e>
+        <e p="Views" t="Include">
+          <e p="_ViewImports.cshtml" t="Include" />
+          <e p="_ViewStart.cshtml" t="Include" />
+          <e p="Account" t="Include">
+            <e p="Login.cshtml" t="Include" />
+          </e>
+          <e p="Home" t="Include">
+            <e p="_OrderSummary.cshtml" t="Include" />
+            <e p="About.cshtml" t="Include" />
+            <e p="Contact.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+            <e p="Privacy.cshtml" t="Include" />
+            <e p="Shop.cshtml" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="_CookieConsentPartial.cshtml" t="Include" />
+            <e p="_Layout.cshtml" t="Include" />
+            <e p="_ValidationScriptsPartial.cshtml" t="Include" />
+            <e p="Error.cshtml" t="Include" />
+          </e>
+        </e>
+        <e p="wwwroot" t="Include">
+          <e p="ClientApp" t="Include">
+            <e p="dist" t="Include">
+              <e p="favicon.ico" t="Include" />
+              <e p="index.html" t="Include" />
+              <e p="main.js" t="Include" />
+              <e p="main.js.map" t="Include" />
+              <e p="polyfills.js" t="Include" />
+              <e p="polyfills.js.map" t="Include" />
+              <e p="runtime.js" t="Include" />
+              <e p="runtime.js.map" t="Include" />
+              <e p="styles.js" t="Include" />
+              <e p="styles.js.map" t="Include" />
+              <e p="vendor.js" t="Include" />
+              <e p="vendor.js.map" t="Include" />
+            </e>
+          </e>
+          <e p="css" t="Include">
+            <e p="site.css" t="Include" />
+            <e p="site.min.css" t="Include" />
+          </e>
+          <e p="favicon.ico" t="Include" />
+          <e p="images" t="Include">
+            <e p="banner1.svg" t="Include" />
+            <e p="banner2.svg" t="Include" />
+            <e p="banner3.svg" t="Include" />
+          </e>
+          <e p="index.html" t="Include" />
+          <e p="js" t="Include">
+            <e p="site.js" t="Include" />
+            <e p="site.min.js" t="Include" />
+          </e>
+          <e p="lib" t="Include">
+            <e p="bootstrap" t="Include">
+              <e p=".bower.json" t="Include" />
+              <e p="dist" t="Include">
+                <e p="css" t="Include">
+                  <e p="bootstrap-theme.css" t="Include" />
+                  <e p="bootstrap-theme.css.map" t="Include" />
+                  <e p="bootstrap-theme.min.css" t="Include" />
+                  <e p="bootstrap-theme.min.css.map" t="Include" />
+                  <e p="bootstrap.css" t="Include" />
+                  <e p="bootstrap.css.map" t="Include" />
+                  <e p="bootstrap.min.css" t="Include" />
+                  <e p="bootstrap.min.css.map" t="Include" />
+                </e>
+                <e p="fonts" t="Include">
+                  <e p="glyphicons-halflings-regular.eot" t="Include" />
+                  <e p="glyphicons-halflings-regular.svg" t="Include" />
+                  <e p="glyphicons-halflings-regular.ttf" t="Include" />
+                  <e p="glyphicons-halflings-regular.woff" t="Include" />
+                  <e p="glyphicons-halflings-regular.woff2" t="Include" />
+                </e>
+                <e p="js" t="Include">
+                  <e p="bootstrap.js" t="Include" />
+                  <e p="bootstrap.min.js" t="Include" />
+                  <e p="npm.js" t="Include" />
+                </e>
+              </e>
+              <e p="LICENSE" t="Include" />
+            </e>
+            <e p="jquery" t="Include">
+              <e p=".bower.json" t="Include" />
+              <e p="dist" t="Include">
+                <e p="jquery.js" t="Include" />
+                <e p="jquery.min.js" t="Include" />
+                <e p="jquery.min.map" t="Include" />
+              </e>
+              <e p="LICENSE.txt" t="Include" />
+            </e>
+            <e p="jquery-validation" t="Include">
+              <e p=".bower.json" t="Include" />
+              <e p="dist" t="Include">
+                <e p="additional-methods.js" t="Include" />
+                <e p="additional-methods.min.js" t="Include" />
+                <e p="jquery.validate.js" t="Include" />
+                <e p="jquery.validate.min.js" t="Include" />
+              </e>
+              <e p="LICENSE.md" t="Include" />
+            </e>
+            <e p="jquery-validation-unobtrusive" t="Include">
+              <e p=".bower.json" t="Include" />
+              <e p="jquery.validate.unobtrusive.js" t="Include" />
+              <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+              <e p="LICENSE.txt" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="XmasTreeApplication.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="XmasTreeApplication.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

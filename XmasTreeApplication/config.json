@@ -1,0 +1,10 @@
+{
+  "ConnectionStrings":{
+    "XmasTreeConnectionString": "Server=localhost;Port=5432;Database=XmasTreeApp;User Id=Andy;Password=P0lar1s!117"
+  },
+  "Tokens":{
+    "Key": "a;lkjasdf;lkajsd;flkjas ;dflkja sd",
+    "Issuer": "http://localhost:5001",
+    "Audience": "users"
+  }
+}
