@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - XmasTreeApplication</title>
+    <link href="~/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="container-fullwidth">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+            <h1 class="navbar-brand"><i class="fa fa-tree"></i> Xmas Tree Application</h1>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#theMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Shop">Shop</a></li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a></li>
+                    }
+                    else
+                    {
+                        <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Account" asp-action="Login">Login</a></li>
+                    }
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <partial name="_CookieConsentPartial"/>
+    <section class="container body-content">
+        @RenderBody()
+    </section>
+    <footer class="container">
+        <div class="text-center">
+            <p>&copy; 2018 - XmasTreeApplication</p>
+        </div>
+    </footer>
+    
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+    @RenderSection("Scripts", false)
+</body>
+</html>
