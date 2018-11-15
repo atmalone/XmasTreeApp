@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -15,19 +9,21 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
+using System.Text;
 using XmasTreeApplication.Data;
-using XmasTreeApplication.Data.Entities;
+using XmasTreeApplication.Common.Entities;
+using XmasTreeApplication.Common.Repositories;
 
 namespace XmasTreeApplication
 {
     public class Startup
     {
+        private readonly IConfiguration _config;
+
         public Startup(IConfiguration configuration)
         {
             _config = configuration;
         }
-
-        private readonly IConfiguration _config;
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -41,25 +37,28 @@ namespace XmasTreeApplication
             services.AddAuthentication()
                 .AddCookie()
                 .AddJwtBearer(cfg =>
-            {
-                cfg.TokenValidationParameters = new TokenValidationParameters()
                 {
-                    ValidIssuer = _config["Tokens:Issuer"],
-                    ValidAudience = _config["Tokens:Audience"],
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Tokens:Key"]))
-                };
-            });
+                    cfg.TokenValidationParameters = new TokenValidationParameters()
+                    {
+                        ValidIssuer = _config["Tokens:Issuer"],
+                        ValidAudience = _config["Tokens:Audience"],
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Tokens:Key"]))
+                    };
+                });
 
             services.AddDbContext<XmasTreeContext>(cfg =>
             {
-                cfg.UseNpgsql(_config.GetConnectionString("XmasTreeConnectionString"));
+                cfg.UseSqlServer(_config.GetConnectionString("XmasTreeConnectionString"));
             });
 
             services.AddAutoMapper();
-            
-            services.AddScoped<IXmasTreeRepository, XmasTreeRepository>();
 
-            
+            services.AddTransient<XmasTreeSeeder>();
+
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
+
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.

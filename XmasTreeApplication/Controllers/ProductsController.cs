@@ -2,8 +2,9 @@ using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using XmasTreeApplication.Common.Entities;
+using XmasTreeApplication.Common.Repositories;
 using XmasTreeApplication.Data;
-using XmasTreeApplication.Data.Entities;
 
 namespace XmasTreeApplication.Controllers
 {
@@ -13,12 +14,15 @@ namespace XmasTreeApplication.Controllers
     public class ProductsController : ControllerBase
     {
         private readonly ILogger<ProductsController> _logger;
-        private readonly IXmasTreeRepository _repository;
+        private readonly IProductRepository _productRepository;
         
-        public ProductsController(ILogger<ProductsController> logger)
+        public ProductsController(ILogger<ProductsController> logger, IProductRepository productRepository)
         {
             _logger = logger;
+            _productRepository = productRepository;
         }
+
+        public IProductRepository ProductRepository { get; }
 
         [HttpGet]
         [ProducesResponseType(200)]
@@ -27,7 +31,7 @@ namespace XmasTreeApplication.Controllers
         {
             try
             {
-                return Ok(_repository.GetAllProducts());
+                return Ok(_productRepository.GetAllProducts());
             }
             catch (Exception ex)
             {

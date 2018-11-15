@@ -1,4 +1,4 @@
-namespace XmasTreeApplication.Data.Entities
+namespace XmasTreeApplication.Common.Entities
 {
     public class Customer
     {
@@ -8,6 +8,7 @@ namespace XmasTreeApplication.Data.Entities
         public string Address1 { get; set; }
         public string Address2 { get; set; }
         public string PostCode { get; set; }
+        public string County { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
     }

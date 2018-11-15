@@ -1,0 +1,24 @@
+[
+  {
+    "Id": 0,
+    "Name": "Andrew Malone",
+    "CompanyName": "Xmas Tree Company",
+    "Address1": "119 Ashley Rise",
+    "Address2": "Portmarnock",
+    "PostCode": "D13 NX67",
+    "County": "Dublin",
+    "PhoneNumber": "0852789848",
+    "Email": "andy.t.malone@gmail.com"
+  },
+  {
+    "Id": 0,
+    "Name": "Emily Kavanagh",
+    "CompanyName": "Xmas Tree Company",
+    "Address1": "55 Fitzwilliam Square North",
+    "Address2": "Dublin 2",
+    "PostCode": "D02 PW96",
+    "County": "Dublin",
+    "PhoneNumber": "0868643023",
+    "Email": "emilymariakavanagh@gmail.com"
+  }
+]

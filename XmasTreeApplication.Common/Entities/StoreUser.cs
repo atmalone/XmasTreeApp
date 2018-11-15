@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 
-namespace XmasTreeApplication.Data.Entities
+namespace XmasTreeApplication.Common.Entities
 {
     public class StoreUser : IdentityUser
     {

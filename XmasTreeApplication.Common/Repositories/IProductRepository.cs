@@ -1,15 +1,13 @@
+using System;
 using System.Collections.Generic;
-using XmasTreeApplication.Data.Entities;
+using XmasTreeApplication.Common.Entities;
 
-namespace XmasTreeApplication.Data
+namespace XmasTreeApplication.Common.Repositories
 {
-    public interface IXmasTreeRepository
+    public interface IProductRepository : IDisposable 
     {
         IEnumerable<Product> GetAllProducts();
         IEnumerable<Product> GetProductsByCategory(string category);
-        
-        IEnumerable<Order> GetAllOrders(bool includeItems);
-        Order GetOrderById(int id);
 
         bool SaveAll();
         void AddEntity(object model);

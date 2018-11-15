@@ -1,0 +1,29 @@
+﻿[
+  {
+    "Id": 0,
+    "Title": "16 Foot Artificial",
+    "Decorated": "True",
+    "TreeSize": "16",
+    "Price": 140,
+    "Colour": "White",
+    "Description": "Lorem Ipsum"
+  },
+  {
+    "Id": 0,
+    "Title": "real foot artificial",
+    "Decorated": "false",
+    "TreeSize": "7/8",
+    "Price": 100,
+    "Colour": "Green",
+    "Description": "Lorem Ipsum"
+  },
+  {
+    "Id": 0,
+    "Title": "7/8 foot real",
+    "Decorated": "True",
+    "TreeSize": "7/8",
+    "Price": 90,
+    "Colour": "Red",
+    "Description": "Lorem Ipsum"
+  }
+]

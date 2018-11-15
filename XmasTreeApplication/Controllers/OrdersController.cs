@@ -4,19 +4,20 @@ using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using XmasTreeApplication.Data;
-using XmasTreeApplication.Data.Entities;
+using XmasTreeApplication.Common.Entities;
 using XmasTreeApplication.ViewModels;
+using XmasTreeApplication.Common.Repositories;
 
 namespace XmasTreeApplication.Controllers
 {
     [Route("api/[Controller]")]
   public class OrdersController : Controller
   {
-    private readonly IXmasTreeRepository _repository;
+    private readonly IOrderRepository _repository;
     private readonly ILogger<OrdersController> _logger;
     private readonly IMapper _mapper;
 
-    public OrdersController(IXmasTreeRepository repository, 
+    public OrdersController(IOrderRepository repository, 
       ILogger<OrdersController> logger,
       IMapper mapper)
     {

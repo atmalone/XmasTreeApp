@@ -1,5 +1,5 @@
 using AutoMapper;
-using XmasTreeApplication.Data.Entities;
+using XmasTreeApplication.Common.Entities;
 using XmasTreeApplication.ViewModels;
 
 namespace XmasTreeApplication.Data

@@ -1,0 +1,11 @@
+C:\Git\XmasTreeApp\XmasTreeApplication.Common\bin\Debug\netcoreapp2.1\XmasTreeApplication.Common.deps.json
+C:\Git\XmasTreeApp\XmasTreeApplication.Common\bin\Debug\netcoreapp2.1\XmasTreeApplication.Common.dll
+C:\Git\XmasTreeApp\XmasTreeApplication.Common\bin\Debug\netcoreapp2.1\XmasTreeApplication.Common.pdb
+C:\Git\XmasTreeApp\XmasTreeApplication.Common\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Git\XmasTreeApp\XmasTreeApplication.Common\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Identity.Stores.xml
+C:\Git\XmasTreeApp\XmasTreeApplication.Common\obj\Debug\netcoreapp2.1\XmasTreeApplication.Common.csproj.CoreCompileInputs.cache
+C:\Git\XmasTreeApp\XmasTreeApplication.Common\obj\Debug\netcoreapp2.1\XmasTreeApplication.Common.AssemblyInfoInputs.cache
+C:\Git\XmasTreeApp\XmasTreeApplication.Common\obj\Debug\netcoreapp2.1\XmasTreeApplication.Common.AssemblyInfo.cs
+C:\Git\XmasTreeApp\XmasTreeApplication.Common\obj\Debug\netcoreapp2.1\XmasTreeApplication.Common.csproj.CopyComplete
+C:\Git\XmasTreeApp\XmasTreeApplication.Common\obj\Debug\netcoreapp2.1\XmasTreeApplication.Common.dll
+C:\Git\XmasTreeApp\XmasTreeApplication.Common\obj\Debug\netcoreapp2.1\XmasTreeApplication.Common.pdb

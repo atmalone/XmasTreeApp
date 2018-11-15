@@ -5,16 +5,16 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using XmasTreeApplication.Data;
 using XmasTreeApplication.Models;
+using XmasTreeApplication.Common.Repositories;
 
 namespace XmasTreeApplication.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IXmasTreeRepository _repository;
+        private readonly IProductRepository _repository;
 
-        public HomeController(IXmasTreeRepository repository)
+        public HomeController(IProductRepository repository)
         {
             _repository = repository;
         }

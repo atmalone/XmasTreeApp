@@ -1,6 +1,8 @@
 {
-  "ConnectionStrings":{
-    "XmasTreeConnectionString": "Server=localhost;Port=5432;Database=XmasTreeApp;User Id=Andy;Password=P0lar1s!117"
+  "ConnectionStrings": {
+    //"XmasTreeConnectionString": "Server=localhost;Port=5432;Database=XmasTreeApp;User Id=Andy;Password=P0lar1s!117"
+    "XmasTreeConnectionString": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=XmasTreeDb;Integrated Security=True;MultipleActiveResultSets=True;"
+
   },
   "Tokens":{
     "Key": "a;lkjasdf;lkajsd;flkjas ;dflkja sd",

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using XmasTreeApplication.Data.Entities;
+using XmasTreeApplication.Common.Entities;
 
 namespace XmasTreeApplication.ViewModels
 {

@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using XmasTreeApplication.Data.Entities;
+using System;
+using XmasTreeApplication.Common.Entities;
 
 namespace XmasTreeApplication.Data
 {
@@ -12,6 +13,7 @@ namespace XmasTreeApplication.Data
         
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
+        public DbSet<Customer> Customers { get; set; }
         
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -25,6 +27,15 @@ namespace XmasTreeApplication.Data
                 .Property(o => o.UnitPrice)
                 .HasColumnType("decimal(18,2)");
 
+            builder.Entity<Customer>();
+
+            builder.Entity<Order>()
+                .HasData(new Order()
+                {
+                    Id = 1,
+                    OrderDate = DateTime.UtcNow,
+                    OrderNumber = "12345"
+                });
         }
     }
 }
